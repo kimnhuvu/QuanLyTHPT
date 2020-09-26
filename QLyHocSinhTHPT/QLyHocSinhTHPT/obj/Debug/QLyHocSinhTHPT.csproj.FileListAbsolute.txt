@@ -1,0 +1,11 @@
+C:\Users\ADMIN\source\repos\QLyHocSinhTHPT\QLyHocSinhTHPT\bin\Debug\QLyHocSinhTHPT.exe.config
+C:\Users\ADMIN\source\repos\QLyHocSinhTHPT\QLyHocSinhTHPT\bin\Debug\QLyHocSinhTHPT.exe
+C:\Users\ADMIN\source\repos\QLyHocSinhTHPT\QLyHocSinhTHPT\bin\Debug\QLyHocSinhTHPT.pdb
+C:\Users\ADMIN\source\repos\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.csprojAssemblyReference.cache
+C:\Users\ADMIN\source\repos\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.Form1.resources
+C:\Users\ADMIN\source\repos\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.Properties.Resources.resources
+C:\Users\ADMIN\source\repos\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.csproj.GenerateResource.cache
+C:\Users\ADMIN\source\repos\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\source\repos\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.exe
+C:\Users\ADMIN\source\repos\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.pdb
+C:\Users\ADMIN\source\repos\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.Form2.resources
