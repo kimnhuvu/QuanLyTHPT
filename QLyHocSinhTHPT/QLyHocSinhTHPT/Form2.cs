@@ -13,7 +13,7 @@ namespace QLyHocSinhTHPT
 {
     public partial class Form2 : Form
     {
-        private string link = @"Data Source=NOKIA-E490\SQLExpress;Initial Catalog=QUANLYTHPT;Integrated Security=True";
+        private string link = @"Data Source=NAM\SQLDEV2019;Initial Catalog=QUANLYTHPT;Integrated Security=True";
         private SqlConnection connect;
         private SqlCommand command;
         public Form2()
@@ -55,6 +55,7 @@ namespace QLyHocSinhTHPT
             lb_control.Visible = true;
             lb_control.Location = new Point(0, 174);
             pn_Hocsinh.Visible = false;
+            pn_Lop.Visible = true;
         }
 
         private void btn_Monhoc_Click(object sender, EventArgs e)
@@ -167,6 +168,74 @@ namespace QLyHocSinhTHPT
                     }
                 }
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.ColumnIndex == 5)
+            {
+                DialogResult result =  MessageBox.Show("Thông báo", "bạn có chắc muốn xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.Yes)
+                {
+                    using (connect = new SqlConnection(link))
+                    {
+                        connect.Open();
+                        command = new SqlCommand("Delete from LOP where MALOP = '" + bang_Lop.Rows[e.RowIndex].Cells[0].Value.ToString() + "'", connect);
+                        command.ExecuteNonQuery();
+                    }
+                    Form2_Load(sender, e);
+                }                
+            }
+            else
+            {
+                if (e.ColumnIndex == 4)
+                {
+                    tb_malop.Text = bang_Lop.Rows[e.RowIndex].Cells[0].Value.ToString();
+                    tb_tenlop.Text = bang_Lop.Rows[e.RowIndex].Cells[1].Value.ToString();
+                    tb_siso.Text = bang_Lop.Rows[e.RowIndex].Cells[2].Value.ToString();
+                    tb_maGVCN.Text = bang_Lop.Rows[e.RowIndex].Cells[3].Value.ToString();
+                    pn_sualop.Visible = true;
+                }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            pn_themlop.Visible = true;
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using(connect = new SqlConnection(link))
+            {
+                connect.Open();
+                command = new SqlCommand("update LOP set TENLOP = N'"+tb_tenlop.Text+"', SISO = '"+tb_siso.Text+"', MAGVCN = '"+tb_maGVCN.Text+"'" +
+                    "where MALOP = '"+tb_malop.Text+"'", connect);
+                command.ExecuteNonQuery();
+            }
+            pn_sualop.Visible = false;
+            Form2_Load(sender, e);
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            using (connect = new SqlConnection(link))
+            {
+                connect.Open();
+                command = new SqlCommand("insert LOP values('"+tb_add_malop.Text+"', N'"+tb_add_tenlop.Text+"', '"+tb_add_siso.Text+"', '"+tb_add_maGVCN.Text+"')" , connect);
+                command.ExecuteNonQuery();
+            }
+            pn_themlop.Visible = false;
+            Form2_Load(sender, e);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            pn_themlop.Visible = false;
+        }
+
+        private void btn_cancel_sua_Click(object sender, EventArgs e)
+        {
+            pn_sualop.Visible = false;
         }
     }
 }
