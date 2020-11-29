@@ -19,3 +19,25 @@ C:\Users\ADMIN\Desktop\Thực tập nhóm\QuanLyTHPT\QuanLyTHPT\QLyHocSinhTHPT\Q
 C:\Users\ADMIN\Desktop\Thực tập nhóm\QuanLyTHPT\QuanLyTHPT\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.csproj.GenerateResource.cache
 C:\Users\ADMIN\Desktop\Thực tập nhóm\QuanLyTHPT\QuanLyTHPT\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.exe
 C:\Users\ADMIN\Desktop\Thực tập nhóm\QuanLyTHPT\QuanLyTHPT\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.pdb
+C:\Users\admin\Desktop\QuanLyTHPT\QLyHocSinhTHPT\QLyHocSinhTHPT\bin\Debug\QLyHocSinhTHPT.exe.config
+C:\Users\admin\Desktop\QuanLyTHPT\QLyHocSinhTHPT\QLyHocSinhTHPT\bin\Debug\QLyHocSinhTHPT.exe
+C:\Users\admin\Desktop\QuanLyTHPT\QLyHocSinhTHPT\QLyHocSinhTHPT\bin\Debug\QLyHocSinhTHPT.pdb
+C:\Users\admin\Desktop\QuanLyTHPT\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\QuanLyTHPT\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.Form1.resources
+C:\Users\admin\Desktop\QuanLyTHPT\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.Form2.resources
+C:\Users\admin\Desktop\QuanLyTHPT\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.Properties.Resources.resources
+C:\Users\admin\Desktop\QuanLyTHPT\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\QuanLyTHPT\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\QuanLyTHPT\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.exe
+C:\Users\admin\Desktop\QuanLyTHPT\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.pdb
+C:\Users\admin\Desktop\QuanLyTHPT - Copy\QLyHocSinhTHPT\QLyHocSinhTHPT\bin\Debug\QLyHocSinhTHPT.exe.config
+C:\Users\admin\Desktop\QuanLyTHPT - Copy\QLyHocSinhTHPT\QLyHocSinhTHPT\bin\Debug\QLyHocSinhTHPT.exe
+C:\Users\admin\Desktop\QuanLyTHPT - Copy\QLyHocSinhTHPT\QLyHocSinhTHPT\bin\Debug\QLyHocSinhTHPT.pdb
+C:\Users\admin\Desktop\QuanLyTHPT - Copy\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\QuanLyTHPT - Copy\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.Form1.resources
+C:\Users\admin\Desktop\QuanLyTHPT - Copy\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.Form2.resources
+C:\Users\admin\Desktop\QuanLyTHPT - Copy\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.Properties.Resources.resources
+C:\Users\admin\Desktop\QuanLyTHPT - Copy\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\QuanLyTHPT - Copy\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\QuanLyTHPT - Copy\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.exe
+C:\Users\admin\Desktop\QuanLyTHPT - Copy\QLyHocSinhTHPT\QLyHocSinhTHPT\obj\Debug\QLyHocSinhTHPT.pdb
