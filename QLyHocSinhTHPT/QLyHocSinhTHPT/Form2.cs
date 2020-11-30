@@ -13,7 +13,7 @@ namespace QLyHocSinhTHPT
 {
     public partial class Form2 : Form
     {
-        private string link = @"Data Source=SCORPION;Initial Catalog=QUANLYTHPT;Integrated Security=True";
+        private string link = @"Data Source=DESKTOP-FV6UJS5\SQLEXPRESS;Initial Catalog=QUANLYTHPT;Integrated Security=True";
         private SqlConnection connect;
         private SqlCommand command;
         public Form2()
@@ -23,6 +23,8 @@ namespace QLyHocSinhTHPT
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'qUANLYTHPTDataSet1.GIAOVIEN' table. You can move, or remove it, as needed.
+            this.gIAOVIENTableAdapter.Fill(this.qUANLYTHPTDataSet1.GIAOVIEN);
             // TODO: This line of code loads data into the 'qUANLYTHPTDataSet1.THOIKHOABIEU' table. You can move, or remove it, as needed.
             this.tHOIKHOABIEUTableAdapter.Fill(this.qUANLYTHPTDataSet1.THOIKHOABIEU);
             // TODO: This line of code loads data into the 'qUANLYTHPTDataSet1.MONHOC' table. You can move, or remove it, as needed.
@@ -398,6 +400,121 @@ namespace QLyHocSinhTHPT
                     }
                 }
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = true;
+        }
+
+        private void label33_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 6)
+            {
+                panel3.Visible = true;
+
+                textBox8.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+                textBox12.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                textBox11.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                textBox7.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+                textBox10.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+                textBox9.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+
+
+                //pn_sua_tkb.BringToFront();
+            }
+            else
+            {
+                if (e.ColumnIndex == 7)
+                {
+                    DialogResult result = MessageBox.Show("Bạn có chắc muốn xóa giáo viên?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (result == DialogResult.Yes)
+                    {
+                        using (connect = new SqlConnection(link))
+                        {
+                            connect.Open();
+                            command = new SqlCommand("delete from GIAOVIEN where MAGIAOVIEN = '" + dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString() + "'", connect);
+                            command.ExecuteNonQuery();
+                        }
+                        Form2_Load(sender, e);
+                    }
+                }
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            using (connect = new SqlConnection(link))
+            {
+                connect.Open();
+                command = new SqlCommand("insert GIAOVIEN values('" + textBox2.Text + "', N'" + textBox5.Text + "', '" + textBox4.Text + "', '" + textBox1.Text + "', '" + textBox3.Text + "','" + textBox6.Text + "')", connect);
+                command.ExecuteNonQuery();
+            }
+            panel2.Visible = false;
+            Form2_Load(sender, e);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = false;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+        }
+
+        private void dataGridView1_CellContentClick_2(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 6)
+            {
+                panel3.Visible = true;
+
+                textBox8.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+                textBox12.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                textBox11.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                textBox7.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+                textBox10.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+                textBox9.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+
+
+                //pn_sua_tkb.BringToFront();
+            }
+            else
+            {
+                if (e.ColumnIndex == 7)
+                {
+                    DialogResult result = MessageBox.Show("Bạn có chắc muốn xóa giáo viên?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (result == DialogResult.Yes)
+                    {
+                        using (connect = new SqlConnection(link))
+                        {
+                            connect.Open();
+                            command = new SqlCommand("delete from GIAOVIEN where MAGIAOVIEN = '" + dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString() + "'", connect);
+                            command.ExecuteNonQuery();
+                        }
+                        Form2_Load(sender, e);
+                    }
+                }
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            using (connect = new SqlConnection(link))
+            {
+                connect.Open();
+                command = new SqlCommand("update GIAOVIEN set MAGIAOVIEN = N'" + textBox8.Text + "', TENGIAOVIEN = '" + textBox12.Text + "', NGAYSINH = '" + textBox11.Text + "', GIOITINH = '" + textBox7.Text + "',DIACHI = '" + textBox10.Text + "',SDT = '" + textBox9.Text + "'" +
+                    "where MAGIAOVIEN = '" + textBox8.Text + "'", connect);
+                command.ExecuteNonQuery();
+            }
+            panel3.Visible = false;
+            Form2_Load(sender, e);
         }
     }
 }
