@@ -13,12 +13,19 @@ namespace QLyHocSinhTHPT
 {
     public partial class Form2 : Form
     {
-        private string link = @"Data Source=DESKTOP-FV6UJS5\SQLEXPRESS;Initial Catalog=QUANLYTHPT;Integrated Security=True";
+        private string link = @"Data Source=.\SQLEXPRESS;Initial Catalog=QUANLYTHPT;Integrated Security=True";
         private SqlConnection connect;
         private SqlCommand command;
         public Form2()
         {
             InitializeComponent();
+               
+            pn_Hocsinh.Visible = false;
+               pn_Lop.Visible = false;
+               pn_monhoc.Visible = false;
+               pn_tkb.Visible = false;
+               pn_Trangchu.Visible = true;
+               panel1.Visible = false;
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -40,7 +47,7 @@ namespace QLyHocSinhTHPT
 
         private void btn_Thoat_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+               Application.Exit();
         }
 
         private void btn_HocSinh_Click(object sender, EventArgs e)
@@ -49,44 +56,66 @@ namespace QLyHocSinhTHPT
             lb_control.Location = new Point(0, 58);
             pn_Hocsinh.Dock = DockStyle.Fill;
             pn_Hocsinh.Visible = true;
+               pn_Lop.Visible = false;
+               pn_monhoc.Visible = false;
+               pn_tkb.Visible = false;
+               
+               panel1.Visible = false;
         }
 
         private void btn_Giaovien_Click(object sender, EventArgs e)
         {
             lb_control.Visible = true;
             lb_control.Location = new Point(0, 116);
-            pn_Hocsinh.Visible = false;
-        }
+               panel1.Dock = DockStyle.Fill;
+               pn_Hocsinh.Visible = false;
+               pn_Lop.Visible = false;
+               pn_monhoc.Visible = false;
+               pn_tkb.Visible = false;
+               
+               panel1.Visible = true;
+          }
 
         private void btn_Lop_Click(object sender, EventArgs e)
         {
             lb_control.Visible = true;
             lb_control.Location = new Point(0, 174);
-            pn_Hocsinh.Visible = false;
-            pn_Lop.Visible = true;
-        }
+               pn_Lop.Dock = DockStyle.Fill;
+               pn_Hocsinh.Visible = false;
+               pn_Lop.Visible = true;
+               pn_monhoc.Visible = false;
+               pn_tkb.Visible = false;
+              
+               panel1.Visible = false;
+          }
 
         private void btn_Monhoc_Click(object sender, EventArgs e)
         {
             lb_control.Visible = true;
             lb_control.Location = new Point(0, 232);
-            pn_Hocsinh.Visible = false;
-            pn_Lop.Visible = false;
-
-            pn_monhoc.Visible = true;
-            pn_monhoc.Dock = DockStyle.Fill;
-        }
+               pn_monhoc.Dock = DockStyle.Fill;
+               pn_Hocsinh.Visible = false;
+               pn_Lop.Visible = false;
+               pn_monhoc.Visible = true;
+               pn_tkb.Visible = false;
+               
+               panel1.Visible = false;
+          }
 
         private void btn_Tkb_Click(object sender, EventArgs e)
         {
             lb_control.Visible = true;
             lb_control.Location = new Point(0, 288);
 
-            pn_Lop.Visible = false;
-            pn_Hocsinh.Visible = false;
-            pn_monhoc.Visible = false;
+               
+               pn_Hocsinh.Visible = false;
+               pn_Lop.Visible = false;
+               pn_monhoc.Visible = false;
+               
+               
+               panel1.Visible = false;
 
-            pn_tkb.Visible = true;
+               pn_tkb.Visible = true;
             pn_tkb.Dock = DockStyle.Fill;
         }
 
